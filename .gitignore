@@ -1,2 +1,16 @@
 .aider*
 .env
+#.DS_Store
+*.idea/
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+*.egg
+env/
+venv/
+env.bak/
+**/*.env
+*.log eoq.txt 
+ThonnyDebug.log
