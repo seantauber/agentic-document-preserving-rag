@@ -1,104 +1,124 @@
 # Agentic Document-Preserving RAG System
 
-An intelligent RAG (Retrieval-Augmented Generation) system where autonomous agents collaborate to analyze, retrieve, and synthesize information while preserving original document integrity.
+An advanced implementation of a Retrieval-Augmented Generation (RAG) system that combines autonomous agents with robust document preservation. Unlike traditional RAG systems that focus solely on retrieval and generation, this system introduces an agent-based architecture that maintains document integrity while enabling sophisticated information processing.
 
-## Features
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python](https://img.shields.io/badge/python-3.12-blue.svg)
 
-- **Document Preservation**: Maintains complete access to original documents while enabling intelligent processing
-- **Autonomous Agents**: Specialized agents for query analysis, document processing, and information synthesis
-- **Intelligent Coordination**: Sophisticated agent coordination for complex information needs
-- **Flexible Document Management**: Robust storage and retrieval system with metadata support
-- **Performance Monitoring**: Built-in system monitoring and metrics collection
+## System Architecture
 
-## Installation
+### Core Components
 
-### Using Poetry (Recommended)
+#### 1. Agent Foundation
+The system is built on a robust agent foundation that provides essential capabilities:
 
-The project uses Poetry for dependency management. To get started:
+```python
+class BaseAgent:
+    def __init__(self):
+        self.state = AgentState()
+        self.knowledge = KnowledgeBase()
+        self.capabilities = set()
+```
 
-1. Install Poetry if you haven't already:
+- **State Management**: Tracks agent activity and current tasks
+- **Knowledge Base**: Maintains agent-specific knowledge and learning
+- **Task Planning**: Creates execution plans for given tasks
+- **Communication**: Handles inter-agent messaging
+- **Experience Tracking**: Records and learns from task execution
+
+#### 2. Specialized Agents
+
+**QueryAnalysisAgent**
+- Analyzes and decomposes user queries
+- Identifies intents and domains
+- Creates subtasks
+- Performs context analysis
+- Calculates confidence scores
+
+**DocumentAgent**
+- Manages document access and analysis
+- Preserves content integrity
+- Identifies relationships
+- Extracts context
+- Handles metadata
+
+**SynthesisAgent**
+- Integrates information from multiple sources
+- Generates coherent responses
+- Maintains source attribution
+- Ensures context awareness
+- Provides confidence scoring
+
+#### 3. Document Management
+
+```python
+class DocumentManager:
+    async def store_document(
+        self,
+        content: bytes,
+        filename: str,
+        content_type: str,
+        tags: List[str] = None,
+        additional_metadata: Dict[str, Any] = None
+    ) -> DocumentReference:
+```
+
+- Original document preservation
+- Robust metadata tracking
+- Efficient storage and retrieval
+- Strong reference management
+- Checksum verification
+
+#### 4. Coordination System
+
+```python
+class AgentCoordinator:
+    async def process_query(self, query: str) -> Result:
+        # 1. Query Analysis
+        query_analysis = await self.query_agent.analyze_query(query)
+        # 2. Document Retrieval
+        relevant_docs = await self._find_relevant_documents(query_analysis)
+        # 3. Information Processing
+        results = await self._execute_plan(plan, context)
+        # 4. Response Generation
+        return await self.synthesis_agent.synthesize(query_analysis, results)
+```
+
+- Task distribution
+- Resource allocation
+- Progress monitoring
+- Error handling
+- Performance optimization
+
+### Comparison with Other RAG Systems
+
+| Feature | This Implementation | Traditional RAG | LangChain RAG |
+|---------|-------------------|----------------|---------------|
+| Document Preservation | ✅ Complete | ❌ Limited | ⚠️ Partial |
+| Agent Intelligence | ✅ Advanced | ❌ Basic | ⚠️ Framework-dependent |
+| Architecture | ✅ Agent-based | ❌ Pipeline | ✅ Chain-based |
+| Extensibility | ✅ High | ⚠️ Medium | ✅ High |
+| Performance Monitoring | ✅ Built-in | ❌ Limited | ⚠️ External |
+
+## Quick Start
+
+### Installation
+
 ```bash
+# Using Poetry (Recommended)
 curl -sSL https://install.python-poetry.org | python3 -
-```
-
-2. Clone and set up the project:
-```bash
-# Clone the repository
 git clone https://github.com/yourusername/agentic-rag.git
 cd agentic-rag
-
-# Install dependencies using Poetry
 poetry install
-
-# Activate the Poetry virtual environment
 poetry shell
-```
 
-### Alternative: Pip Installation
-
-If you prefer using pip:
-
-```bash
-# Clone the repository
+# Using Pip
 git clone https://github.com/yourusername/agentic-rag.git
 cd agentic-rag
-
-# Create and activate a virtual environment (optional but recommended)
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
 pip install -r requirements.txt
 ```
-
-## Cache Management
-
-The system uses a `rag_storage` directory to cache documents and their references. This cache needs to be managed properly:
-
-- **Location**: The cache is stored in the `./rag_storage` directory relative to your working directory
-- **Structure**:
-  ```
-  rag_storage/
-  ├── documents/     # Stores original documents
-  └── references/    # Stores document metadata and references
-  ```
-- **Clearing the Cache**: 
-  ```bash
-  # Remove the entire cache directory
-  rm -rf ./rag_storage
-  
-  # On Windows:
-  rmdir /s /q rag_storage
-  ```
-- **When to Clear**: Clear the cache when:
-  - Testing different document sets
-  - Troubleshooting document processing
-  - Starting fresh with new documents
-  - After making changes to document processing logic
-
-## Running Examples
-
-### Basic Usage Example
-
-The `examples/basic_usage.py` demonstrates core functionality:
-
-```bash
-# Clear cache and run with Poetry
-rm -rf ./rag_storage && poetry run python examples/basic_usage.py
-
-# Without Poetry (if using regular pip installation)
-rm -rf ./rag_storage && python examples/basic_usage.py
-```
-
-This example:
-1. Clears any existing cache
-2. Creates a new RAG system instance
-3. Adds a sample document
-4. Processes various queries
-5. Demonstrates document search
-6. Shows system metrics
-
-## Usage
 
 ### Basic Usage
 
@@ -110,17 +130,13 @@ async def main():
     # Create system instance
     system = await create_rag_system()
     
-    # Add a document with domain metadata
+    # Add a document
     doc_ref = await system.add_document(
         content=content,
         filename="example.txt",
         content_type="text/plain",
-        tags=["research", "paper"],
-        metadata={
-            "author": "John Doe",
-            "date": "2024-01-01",
-            "domain": "research"  # Important for domain attribution
-        }
+        tags=["research"],
+        metadata={"domain": "research"}
     )
     
     # Process a query
@@ -136,54 +152,75 @@ if __name__ == "__main__":
     asyncio.run(main())
 ```
 
+## Advanced Usage
+
 ### Document Management
 
 ```python
-# Add a document with metadata
+# Add document with rich metadata
 doc_ref = await system.add_document(
     content=content,
-    filename="example.txt",
-    content_type="text/plain",
-    tags=["category1", "important"],
-    metadata={"author": "John Doe", "date": "2024-01-01"}
+    filename="research_paper.pdf",
+    content_type="application/pdf",
+    tags=["research", "ai", "important"],
+    metadata={
+        "author": "John Doe",
+        "date": "2024-01-01",
+        "domain": "artificial-intelligence",
+        "institution": "Research Lab"
+    }
 )
-
-# Retrieve document content
-content = await system.get_document(doc_ref.doc_id)
 
 # Search documents
 results = await system.search_documents(
-    tags=["important"],
-    metadata_filters={"author": "John Doe"}
+    tags=["research", "important"],
+    metadata_filters={
+        "domain": "artificial-intelligence",
+        "author": "John Doe"
+    }
 )
 ```
 
 ### System Monitoring
 
 ```python
-# Get system metrics
+# Get performance metrics
 metrics = system.get_system_metrics()
 print(f"Average query latency: {metrics['avg_query_latency']}s")
+print(f"Document processing rate: {metrics['doc_processing_rate']}/s")
+print(f"Memory usage: {metrics['memory_usage_mb']}MB")
+```
+
+## Cache Management
+
+The system maintains a structured cache in the `rag_storage` directory:
+
+```
+rag_storage/
+├── documents/     # Original documents
+└── references/    # Metadata and references
+```
+
+Cache management commands:
+```bash
+# Clear cache (Unix)
+rm -rf ./rag_storage
+
+# Clear cache (Windows)
+rmdir /s /q rag_storage
 ```
 
 ## Testing
 
-The system includes a comprehensive test suite:
-
 ```bash
-# Run all tests with Poetry
+# Run all tests
 poetry run pytest tests/
-
-# Run specific test file
-poetry run pytest tests/test_system.py
 
 # Run with coverage
 poetry run pytest --cov=agentic_rag tests/
 
-# Without Poetry:
-pytest tests/
-pytest tests/test_system.py
-pytest --cov=agentic_rag tests/
+# Run specific test file
+poetry run pytest tests/test_system.py
 ```
 
 ## Project Structure
@@ -198,15 +235,13 @@ agentic_rag/
 ├── system.py            # Main system interface
 └── __init__.py
 examples/
-└── basic_usage.py       # Basic usage example
+└── basic_usage.py       # Usage examples
 tests/
 ├── test_system.py       # System tests
-└── __init__.py
+└── test_integration.py  # Integration tests
 ```
 
 ## Dependencies
-
-The project uses the following main dependencies (managed by Poetry):
 
 ```toml
 [tool.poetry.dependencies]
@@ -224,14 +259,14 @@ pytest-cov = "^4.1.0"
 ## Extension Points
 
 1. **Agent Capabilities**
-   - Learning from interactions
+   - Enhanced learning mechanisms
    - Specialized document analysis
    - Advanced query understanding
    - Dynamic resource allocation
 
 2. **System Features**
-   - Persistent storage
-   - Advanced caching
+   - Persistent storage backends
+   - Advanced caching strategies
    - Real-time updates
    - Multi-user support
 
