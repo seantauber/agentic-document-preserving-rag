@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "agentic_rag"
+version = "0.1.0"
+description = "An agentic RAG system with document preservation capabilities"
+authors = ["Dev Bot"]
+readme = "README.md"
+packages = [{include = "agentic_rag"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+asyncio = "^3.4.3"
+typing = "^3.7.4"
+dataclasses = "^0.6"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+pytest-asyncio = "^0.20.0"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

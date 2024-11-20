@@ -1,0 +1,20 @@
+{
+  "doc_id": "2024-11-20T14:59:19.101693_1cd19f76fb396ddf",
+  "filename": "climate_research.txt",
+  "content_type": "text/plain",
+  "size": 797,
+  "created_at": "2024-11-20T14:59:19.101876",
+  "updated_at": "2024-11-20T14:59:19.101877",
+  "checksum": "1cd19f76fb396ddf18ac85f7bd1466bb8e4dad6f82c358c646456955143f1a7b",
+  "tags": [
+    "research",
+    "climate",
+    "marine"
+  ],
+  "additional_metadata": {
+    "author": "Marine Research Team",
+    "year": 2023,
+    "type": "research paper",
+    "domain": "climate"
+  }
+}
