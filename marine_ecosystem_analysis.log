@@ -1,0 +1,234 @@
+2024-11-20 16:00:00,622 - __main__ - INFO - Starting marine ecosystem analysis
+2024-11-20 16:00:00,622 - agentic_rag.system - INFO - Agentic RAG System initialized
+2024-11-20 16:00:00,622 - __main__ - INFO - Loading documents into the system
+2024-11-20 16:00:00,623 - agentic_rag.system - INFO - Adding document: coral_reef_study.txt
+2024-11-20 16:00:00,623 - __main__ - INFO - Added document: coral_reef_study.txt
+2024-11-20 16:00:00,623 - agentic_rag.system - INFO - Adding document: marine_biodiversity_assessment.txt
+2024-11-20 16:00:00,624 - __main__ - INFO - Added document: marine_biodiversity_assessment.txt
+2024-11-20 16:00:00,624 - agentic_rag.system - INFO - Adding document: climate_impact_synthesis.txt
+2024-11-20 16:00:00,624 - __main__ - INFO - Added document: climate_impact_synthesis.txt
+2024-11-20 16:00:00,624 - __main__ - INFO - Beginning query demonstrations
+2024-11-20 16:00:00,625 - __main__ - INFO - Testing document integrity
+2024-11-20 16:00:00,625 - agentic_rag.system - INFO - Processing query: What is the reference marker for the coral reef study?
+2024-11-20 16:00:00,625 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:00:00,626 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:00:00,626 - __main__ - INFO - Testing cross-document analysis
+2024-11-20 16:00:00,626 - agentic_rag.system - INFO - Processing query: 
+        Analyze how temperature changes affect both coral reefs and marine biodiversity,
+        including direct and indirect effects on ecosystem stability.
+        
+2024-11-20 16:00:00,626 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:00:00,626 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:00:00,627 - __main__ - INFO - Testing reference resolution
+2024-11-20 16:00:00,627 - agentic_rag.system - INFO - Processing query: What data from the coral reef study is referenced in the synthesis document?
+2024-11-20 16:00:00,627 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:00:00,627 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:00:00,627 - __main__ - INFO - Demonstrating advanced search capabilities
+2024-11-20 16:00:00,628 - __main__ - INFO - Collecting system metrics
+2024-11-20 16:00:00,628 - __main__ - INFO - Testing context expansion
+2024-11-20 16:00:00,628 - agentic_rag.system - INFO - Processing query: 
+        Explain the cascading effects of coral reef degradation on marine ecosystems,
+        including both immediate and long-term consequences.
+        
+2024-11-20 16:00:00,628 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:00:00,629 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:00:00,629 - __main__ - INFO - Analysis complete
+2024-11-20 16:01:20,967 - __main__ - INFO - Starting marine ecosystem analysis
+2024-11-20 16:01:20,967 - agentic_rag.system - INFO - Agentic RAG System initialized
+2024-11-20 16:01:20,967 - __main__ - INFO - Loading documents into the system
+2024-11-20 16:01:20,967 - agentic_rag.system - INFO - Adding document: coral_reef_study.txt
+2024-11-20 16:01:20,968 - __main__ - INFO - Added document: coral_reef_study.txt
+2024-11-20 16:01:20,968 - agentic_rag.system - INFO - Adding document: marine_biodiversity_assessment.txt
+2024-11-20 16:01:20,968 - __main__ - INFO - Added document: marine_biodiversity_assessment.txt
+2024-11-20 16:01:20,969 - agentic_rag.system - INFO - Adding document: climate_impact_synthesis.txt
+2024-11-20 16:01:20,969 - __main__ - INFO - Added document: climate_impact_synthesis.txt
+2024-11-20 16:01:20,969 - __main__ - INFO - Beginning query demonstrations
+2024-11-20 16:01:20,969 - __main__ - INFO - Testing document integrity
+2024-11-20 16:01:20,969 - agentic_rag.system - INFO - Processing query: What is the unique reference marker used in the coral reef study?
+2024-11-20 16:01:20,969 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:01:20,971 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:01:20,971 - agentic_rag.system - INFO - Processing query: Verify the structure and sections present in the coral reef study document.
+2024-11-20 16:01:20,971 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:01:20,973 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:01:20,973 - __main__ - INFO - Testing cross-document analysis
+2024-11-20 16:01:20,973 - agentic_rag.system - INFO - Processing query: Analyze the relationship between temperature changes and marine ecosystems,
+            specifically how temperature affects both coral reefs and biodiversity. Include
+            quantitative data from both the coral reef study and biodiversity assessment.
+2024-11-20 16:01:20,973 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:01:20,974 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:01:20,974 - agentic_rag.system - INFO - Processing query: Compare the temperature thresholds mentioned in different documents for
+            coral bleaching and biodiversity loss. What are the implications of these
+            thresholds being reached?
+2024-11-20 16:01:20,974 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:01:20,975 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:01:20,975 - __main__ - INFO - Testing reference resolution
+2024-11-20 16:01:20,975 - agentic_rag.system - INFO - Processing query: What specific data points from the coral reef study are cited in the synthesis document?
+2024-11-20 16:01:20,975 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:01:20,976 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:01:20,977 - agentic_rag.system - INFO - Processing query: How does the synthesis document integrate findings from both the coral and biodiversity studies?
+2024-11-20 16:01:20,977 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:01:20,978 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:01:20,978 - __main__ - INFO - Demonstrating advanced search capabilities
+2024-11-20 16:01:20,980 - __main__ - ERROR - Error in analysis: 'DocumentMetadata' object has no attribute 'type'
+2024-11-20 16:01:20,980 - __main__ - INFO - Analysis complete
+2024-11-20 16:01:30,803 - __main__ - INFO - Starting marine ecosystem analysis
+2024-11-20 16:01:30,803 - agentic_rag.system - INFO - Agentic RAG System initialized
+2024-11-20 16:01:30,803 - __main__ - INFO - Loading documents into the system
+2024-11-20 16:01:30,803 - agentic_rag.system - INFO - Adding document: coral_reef_study.txt
+2024-11-20 16:01:30,804 - __main__ - INFO - Added document: coral_reef_study.txt
+2024-11-20 16:01:30,805 - agentic_rag.system - INFO - Adding document: marine_biodiversity_assessment.txt
+2024-11-20 16:01:30,805 - __main__ - INFO - Added document: marine_biodiversity_assessment.txt
+2024-11-20 16:01:30,805 - agentic_rag.system - INFO - Adding document: climate_impact_synthesis.txt
+2024-11-20 16:01:30,805 - __main__ - INFO - Added document: climate_impact_synthesis.txt
+2024-11-20 16:01:30,805 - __main__ - INFO - Beginning query demonstrations
+2024-11-20 16:01:30,805 - __main__ - INFO - Testing document integrity
+2024-11-20 16:01:30,806 - agentic_rag.system - INFO - Processing query: What is the unique reference marker used in the coral reef study?
+2024-11-20 16:01:30,806 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:01:30,807 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:01:30,808 - agentic_rag.system - INFO - Processing query: Verify the structure and sections present in the coral reef study document.
+2024-11-20 16:01:30,808 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:01:30,809 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:01:30,809 - __main__ - INFO - Testing cross-document analysis
+2024-11-20 16:01:30,809 - agentic_rag.system - INFO - Processing query: Analyze the relationship between temperature changes and marine ecosystems,
+            specifically how temperature affects both coral reefs and biodiversity. Include
+            quantitative data from both the coral reef study and biodiversity assessment.
+2024-11-20 16:01:30,809 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:01:30,810 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:01:30,811 - agentic_rag.system - INFO - Processing query: Compare the temperature thresholds mentioned in different documents for
+            coral bleaching and biodiversity loss. What are the implications of these
+            thresholds being reached?
+2024-11-20 16:01:30,811 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:01:30,811 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:01:30,812 - __main__ - INFO - Testing reference resolution
+2024-11-20 16:01:30,812 - agentic_rag.system - INFO - Processing query: What specific data points from the coral reef study are cited in the synthesis document?
+2024-11-20 16:01:30,812 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:01:30,813 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:01:30,813 - agentic_rag.system - INFO - Processing query: How does the synthesis document integrate findings from both the coral and biodiversity studies?
+2024-11-20 16:01:30,813 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:01:30,815 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:01:30,815 - __main__ - INFO - Demonstrating advanced search capabilities
+2024-11-20 16:01:30,817 - __main__ - ERROR - Error in analysis: 'DocumentMetadata' object has no attribute 'type'
+2024-11-20 16:01:30,817 - __main__ - INFO - Analysis complete
+2024-11-20 16:02:16,661 - __main__ - INFO - Starting marine ecosystem analysis
+2024-11-20 16:02:16,661 - agentic_rag.system - INFO - Agentic RAG System initialized
+2024-11-20 16:02:16,661 - __main__ - INFO - Loading documents into the system
+2024-11-20 16:02:16,661 - agentic_rag.system - INFO - Adding document: coral_reef_study.txt
+2024-11-20 16:02:16,662 - __main__ - INFO - Added document: coral_reef_study.txt
+2024-11-20 16:02:16,662 - agentic_rag.system - INFO - Adding document: marine_biodiversity_assessment.txt
+2024-11-20 16:02:16,662 - __main__ - INFO - Added document: marine_biodiversity_assessment.txt
+2024-11-20 16:02:16,662 - agentic_rag.system - INFO - Adding document: climate_impact_synthesis.txt
+2024-11-20 16:02:16,663 - __main__ - INFO - Added document: climate_impact_synthesis.txt
+2024-11-20 16:02:16,663 - __main__ - INFO - Beginning query demonstrations
+2024-11-20 16:02:16,663 - __main__ - INFO - Testing document integrity
+2024-11-20 16:02:16,663 - agentic_rag.system - INFO - Processing query: List all sections in the coral reef study and its reference marker.
+2024-11-20 16:02:16,663 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:02:16,667 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:02:16,667 - __main__ - INFO - Testing cross-document analysis
+2024-11-20 16:02:16,667 - agentic_rag.system - INFO - Processing query: 
+        Analyze the relationship between temperature changes and marine ecosystems:
+        1. What is the rate of ocean temperature increase?
+        2. What temperature thresholds trigger coral bleaching and biodiversity loss?
+        3. What are the quantitative impacts on coral reefs and marine species?
+        
+2024-11-20 16:02:16,667 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:02:16,669 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:02:16,669 - __main__ - INFO - Testing reference resolution
+2024-11-20 16:02:16,669 - agentic_rag.system - INFO - Processing query: 
+        What specific data points from the coral reef study (CORAL_TEMP_REF_001) are 
+        referenced in the synthesis document? Include the exact values and context.
+        
+2024-11-20 16:02:16,669 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:02:16,671 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:02:16,672 - __main__ - INFO - Demonstrating search capabilities
+2024-11-20 16:02:16,672 - __main__ - ERROR - Error in analysis: 'DocumentMetadata' object has no attribute 'domain'
+2024-11-20 16:02:16,672 - __main__ - INFO - Analysis complete
+2024-11-20 16:05:09,606 - __main__ - INFO - Starting marine ecosystem analysis
+2024-11-20 16:05:09,609 - __main__ - INFO - Cleared existing storage at rag_storage/marine_analysis
+2024-11-20 16:05:09,609 - agentic_rag.system - INFO - Agentic RAG System initialized
+2024-11-20 16:05:09,609 - __main__ - INFO - Loading documents into the system
+2024-11-20 16:05:09,610 - agentic_rag.system - INFO - Adding document: coral_reef_study.txt
+2024-11-20 16:05:09,610 - __main__ - INFO - Added document: coral_reef_study.txt
+2024-11-20 16:05:09,610 - agentic_rag.system - INFO - Adding document: marine_biodiversity_assessment.txt
+2024-11-20 16:05:09,611 - __main__ - INFO - Added document: marine_biodiversity_assessment.txt
+2024-11-20 16:05:09,611 - agentic_rag.system - INFO - Adding document: climate_impact_synthesis.txt
+2024-11-20 16:05:09,611 - __main__ - INFO - Added document: climate_impact_synthesis.txt
+2024-11-20 16:05:09,611 - __main__ - INFO - Beginning query demonstrations
+2024-11-20 16:05:09,611 - __main__ - INFO - Testing document integrity
+2024-11-20 16:05:09,611 - agentic_rag.system - INFO - Processing query: List all sections in the coral reef study and its reference marker.
+2024-11-20 16:05:09,612 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:05:09,612 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:05:09,613 - __main__ - INFO - Testing cross-document analysis
+2024-11-20 16:05:09,613 - agentic_rag.system - INFO - Processing query: 
+        Analyze the relationship between temperature changes and marine ecosystems:
+        1. What is the rate of ocean temperature increase?
+        2. What temperature thresholds trigger coral bleaching and biodiversity loss?
+        3. What are the quantitative impacts on coral reefs and marine species?
+        
+2024-11-20 16:05:09,613 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:05:09,613 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:05:09,614 - __main__ - INFO - Testing reference resolution
+2024-11-20 16:05:09,614 - agentic_rag.system - INFO - Processing query: 
+        What specific data points from the coral reef study (CORAL_TEMP_REF_001) are 
+        referenced in the synthesis document? Include the exact values and context.
+        
+2024-11-20 16:05:09,614 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:05:09,614 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:05:09,615 - __main__ - INFO - Demonstrating search capabilities
+2024-11-20 16:05:09,615 - __main__ - INFO - Collecting system metrics
+2024-11-20 16:05:09,615 - __main__ - INFO - Testing context expansion
+2024-11-20 16:05:09,615 - agentic_rag.system - INFO - Processing query: 
+        Explain the complete chain of effects in marine ecosystems:
+        1. How do temperature increases affect coral reefs?
+        2. How does coral reef degradation impact marine biodiversity?
+        3. What are the long-term implications for ecosystem stability?
+        Include specific data points and connections between these effects.
+        
+2024-11-20 16:05:09,615 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:05:09,615 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:05:09,616 - __main__ - INFO - Analysis complete
+2024-11-20 16:07:53,341 - __main__ - INFO - Starting marine ecosystem analysis
+2024-11-20 16:07:53,342 - __main__ - INFO - Cleared existing storage at rag_storage/marine_analysis
+2024-11-20 16:07:53,343 - agentic_rag.system - INFO - Agentic RAG System initialized
+2024-11-20 16:07:53,343 - __main__ - INFO - Loading documents into the system
+2024-11-20 16:07:53,343 - agentic_rag.system - INFO - Adding document: coral_reef_study.txt
+2024-11-20 16:07:53,344 - __main__ - INFO - Added document: coral_reef_study.txt
+2024-11-20 16:07:53,344 - agentic_rag.system - INFO - Adding document: marine_biodiversity_assessment.txt
+2024-11-20 16:07:53,344 - __main__ - INFO - Added document: marine_biodiversity_assessment.txt
+2024-11-20 16:07:53,344 - agentic_rag.system - INFO - Adding document: climate_impact_synthesis.txt
+2024-11-20 16:07:53,345 - __main__ - INFO - Added document: climate_impact_synthesis.txt
+2024-11-20 16:07:53,345 - agentic_rag.system - INFO - Processing query: What are the main section headings in the coral reef study?
+2024-11-20 16:07:53,345 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:07:53,346 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:07:53,346 - agentic_rag.system - INFO - Processing query: What is the unique reference identifier for the coral reef study?
+2024-11-20 16:07:53,346 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:07:53,347 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:07:53,347 - agentic_rag.system - INFO - Processing query: What is the measured rate of ocean temperature increase?
+2024-11-20 16:07:53,348 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:07:53,348 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:07:53,348 - agentic_rag.system - INFO - Processing query: 
+        Compare the following across all documents:
+        1. Temperature increase rate from coral study
+        2. Species migration rate from biodiversity assessment
+        3. How these rates are referenced in the synthesis
+        Provide specific numbers and cross-references.
+        
+2024-11-20 16:07:53,348 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:07:53,349 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:07:53,349 - agentic_rag.system - INFO - Processing query: 
+        Based on the temperature thresholds mentioned:
+        - At what temperature does coral bleaching occur?
+        - At what temperature does biodiversity loss accelerate?
+        - What is the time gap between these thresholds being reached?
+        Use specific data points to support the analysis.
+        
+2024-11-20 16:07:53,349 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:07:53,349 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:07:53,349 - agentic_rag.system - INFO - Processing query: 
+        For each reference to CORAL_TEMP_REF_001 in the synthesis document:
+        1. What specific data point is being referenced?
+        2. In what context is it used?
+        3. How does it connect to other findings?
+        
+2024-11-20 16:07:53,350 - agentic_rag.core.coordinator - INFO - Starting query analysis
+2024-11-20 16:07:53,350 - agentic_rag.core.coordinator - INFO - Synthesizing final response
+2024-11-20 16:07:53,351 - __main__ - INFO - Analysis complete
